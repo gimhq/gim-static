@@ -1,0 +1,10 @@
+{
+  // Static assets only: Cloudflare serves ./public, there is no Worker script.
+  "name": "gim-static",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public"
+  },
+  // The g.im zone has to be active on the same Cloudflare account.
+  "routes": [{ "pattern": "static.g.im", "custom_domain": true }]
+}
